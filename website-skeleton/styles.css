@@ -1,0 +1,56 @@
+body,html{
+    background-color: rgba(165, 164, 164, 0.74);
+}
+
+ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    padding: 8px;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: white;
+}
+
+a {
+    font-size: 18px;
+}
+
+li a:hover{
+    background-color: black;
+}
+
+#title{
+    display: block;
+    color: #B22222;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.activeTab{
+    background-color: rgb(12, 88, 12);
+}
+
+#logo{
+    width: 250px;
+    height: 250px;
+}
+
+#content{
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
