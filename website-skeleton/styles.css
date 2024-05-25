@@ -1,8 +1,11 @@
 body,html{
     background-color: rgba(165, 164, 164, 0.74);
     margin: 0;
+    padding: 0;
+    min-height: 100%;
 }
 
+/* container of the container of the links */
 ul {
     list-style-type: none;
     margin: 0px;
@@ -11,52 +14,65 @@ ul {
     background-color: #333;
 }
 
+/* container of the links */
 li {
     float: left;
 }
 
-li a {
-    display: block;
-    padding: 8px;
-    padding: 14px 16px;
-    text-decoration: none;
-    color: white;
-}
-
-a {
-    font-size: 18px;
-}
-
-li a:hover{
+/* changes color on hover */
+li:hover{
     background-color: black;
 }
 
-#title{
-    display: block;
-    color: #B22222;
-    padding: 14px 16px;
-    text-decoration: none;
+/* links */
+a {
     font-size: 18px;
-    font-weight: bold;
+    color: white;
+    text-decoration: none;
 }
 
+li a {
+    display: block;
+    padding: 14px 16px;
+}
+
+/* highlights the active tab in green */
 .activeTab{
     background-color: rgb(12, 88, 12);
 }
 
+/* image in the about page */
 #logo{
     width: 250px;
     height: 250px;
 }
 
+/* text in the about page */
 #content{
     margin: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 0px;
+    padding-top: 120px;
+    padding-bottom: 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#nav{
-    position: sticky;
-    top: 0px;
+/* container of the banner and link nav bars*/
+#topbar{
+    position: fixed;
+    margin: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+/* could design a new quant club logo and put the image file on this banner instead of <h1> */
+#banner{
+    color: rgb(160, 30, 30);
+    display: flex;
+    justify-content: center;
+    background-color: rgb(64, 66, 66);
 }
