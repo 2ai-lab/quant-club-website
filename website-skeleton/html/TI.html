@@ -14,16 +14,28 @@
             <a id='igContainer' href="https://www.instagram.com/usd_quant_club/?igsh=MXVnNzMzc3g3cnI0" target="_blank"><img id="insta" src="../assets/instalogo.png"></a>
         </nav>
         <nav id="links">
-            <ul>
-                <li><a href="index.html">About</a></li>
-                <li><a href="education.html">Education</a></li>
-                <li class="activeTab"><a>Technical Indicators</a></li>
-                <li><a href="ML.html">Machine Learning</a></li>
+            <ul id="ulLinks">
+                <li id="link"><a href="index.html">About</a></li>
+                <li id="link"><a href="education.html">Education</a></li>
+                <li id="link" class="activeTab"><a>Technical Indicators</a></li>
+                <li id="link"><a href="ML.html">Machine Learning</a></li>
             </ul>
         </nav>
     </div>
     
     <!-- test chart -->
-    <iframe id='chart' src="apple_stock_candlestick_chart.html"></iframe>
+    <div id="chartContainer">
+        <ul id="timeframes">
+            <li><button id="time">1D</button></li>
+            <li><button id="time">5D</button></li>
+            <li><button id="time">1M</button></li>
+            <li><button id="time">6M</button></li>
+            <li><button id="time">YTD</button></li>
+            <li><button id="time">1Y</button></li>
+            <li><button id="time">5Y</button></li>
+            <li><button id="time">MAX</button></li>
+        </ul>
+        <iframe id='chart' src="apple_stock_candlestick_chart.html"></iframe>
+    </div>
 </body>
 </html>
